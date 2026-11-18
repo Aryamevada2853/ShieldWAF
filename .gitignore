@@ -1,0 +1,27 @@
+# Python
+venv/
+env/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+app.log
+
+# IDE and local history
+.vscode/
+.idea/
+.history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+settings.json
+*.pdf

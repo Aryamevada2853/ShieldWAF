@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover why ShieldWAF helps identify suspicious web application requests and security threats.">
+
+    <title>ShieldWAF | Why Choose Us</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/responsive.css') }}">
+
+</head>
+
+<body class="sub_page">
+
+    <div class="hero_area">
+
+        <!-- Background -->
+        <div class="hero_bg_box">
+            <div class="bg_img_box">
+                <img src="{{ url_for('static', filename='images/hero-bg.png') }}"
+                     alt="ShieldWAF background">
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header class="header_section">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+
+                    <a class="navbar-brand" href="{{ url_for('index') }}">
+                        <span>ShieldWAF</span>
+                    </a>
+
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+
+                        <span></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse"
+                         id="navbarSupportedContent">
+
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="{{ url_for('index') }}">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="{{ url_for('about') }}">
+                                    About
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="{{ url_for('service') }}">
+                                    Services
+                                </a>
+                            </li>
+
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                   href="{{ url_for('why') }}">
+                                    Why Us
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="{{ url_for('team') }}">
+                                    Team
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="{{ url_for('login') }}">
+                                    <i class="fa fa-user"
+                                       aria-hidden="true"></i>
+                                    Admin Login
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
+            </div>
+        </header>
+
+        <!-- End Header -->
+
+    </div>
+
+
+    <!-- Why Choose Us Section -->
+
+    <section class="why_section layout_padding">
+
+        <div class="container">
+
+            <div class="heading_container heading_center">
+
+                <h2>
+                    Why Choose <span>ShieldWAF</span>
+                </h2>
+
+                <p>
+                    ShieldWAF is designed to help identify suspicious
+                    web application requests through request inspection,
+                    configurable detection patterns and security monitoring.
+                </p>
+
+            </div>
+
+
+            <div class="why_container">
+
+                <!-- Feature 1 -->
+
+                <div class="box">
+
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='images/w1.png') }}"
+                             alt="Threat detection">
+                    </div>
+
+                    <div class="detail-box">
+
+                        <h5>
+                            Suspicious Request Detection
+                        </h5>
+
+                        <p>
+                            ShieldWAF inspects incoming request data
+                            against configured detection patterns to
+                            identify potentially malicious activity,
+                            including SQL injection and cross-site
+                            scripting attempts.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+
+                <div class="box">
+
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='images/w2.png') }}"
+                             alt="Request monitoring">
+                    </div>
+
+                    <div class="detail-box">
+
+                        <h5>
+                            Request Monitoring
+                        </h5>
+
+                        <p>
+                            The application records relevant request
+                            information and security events, helping
+                            administrators review suspicious activity
+                            and understand potential threats.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+
+                <div class="box">
+
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='images/w3.png') }}"
+                             alt="IP filtering">
+                    </div>
+
+                    <div class="detail-box">
+
+                        <h5>
+                            IP-Based Filtering
+                        </h5>
+
+                        <p>
+                            ShieldWAF checks incoming requests against
+                            configured IP addresses to identify
+                            requests originating from blocked sources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 4 -->
+
+                <div class="box">
+
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='images/w4.png') }}"
+                             alt="Security notifications">
+                    </div>
+
+                    <div class="detail-box">
+
+                        <h5>
+                            Security Notifications
+                        </h5>
+
+                        <p>
+                            The prototype supports Telegram notifications
+                            for detected malicious requests, allowing
+                            administrators to receive alerts about
+                            potentially suspicious activity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Read More Button -->
+
+            <div class="btn-box">
+
+                <a href="{{ url_for('service') }}">
+                    Explore Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Why Choose Us Section -->
+
+
+    <!-- Additional Information Section -->
+
+    <section class="service_section layout_padding">
+
+        <div class="service_container">
+
+            <div class="container">
+
+                <div class="heading_container heading_center">
+
+                    <h2>
+                        Our <span>Approach</span>
+                    </h2>
+
+                    <p>
+                        A straightforward approach to inspecting
+                        application requests and identifying
+                        potentially malicious activity.
+                    </p>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <div class="detail-box">
+
+                                <h5>
+                                    01. Inspect
+                                </h5>
+
+                                <p>
+                                    Incoming application requests are
+                                    examined to identify relevant
+                                    request information and suspicious
+                                    input patterns.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <div class="detail-box">
+
+                                <h5>
+                                    02. Detect
+                                </h5>
+
+                                <p>
+                                    Configured detection patterns and
+                                    IP-based checks are used to identify
+                                    potentially malicious requests.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <div class="detail-box">
+
+                                <h5>
+                                    03. Monitor
+                                </h5>
+
+                                <p>
+                                    Security events are logged and
+                                    supported notifications help
+                                    administrators review detected
+                                    activity.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Additional Information Section -->
+
+
+    <!-- Information Section -->
+
+    <section class="info_section layout_padding2">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- About -->
+                <div class="col-md-6 col-lg-3 info_col">
+
+                    <div class="info_detail">
+
+                        <h4>
+                            ShieldWAF
+                        </h4>
+
+                        <p>
+                            A Flask-based web application security
+                            prototype designed to identify suspicious
+                            requests using configured detection patterns.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Information -->
+                <div class="col-md-6 col-lg-3 info_col">
+
+                    <div class="info_detail">
+
+                        <h4>
+                            Our Focus
+                        </h4>
+
+                        <p>
+                            Web application security, request inspection,
+                            malicious payload detection and security
+                            event monitoring.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Navigation -->
+                <div class="col-md-6 col-lg-3 info_col">
+
+                    <div class="info_link_box">
+
+                        <h4>
+                            Quick Links
+                        </h4>
+
+                        <div class="info_links">
+
+                            <a href="{{ url_for('index') }}">
+                                Home
+                            </a>
+
+                            <a href="{{ url_for('about') }}">
+                                About
+                            </a>
+
+                            <a href="{{ url_for('service') }}">
+                                Services
+                            </a>
+
+                            <a class="active" href="{{ url_for('why') }}">
+                                Why Us
+                            </a>
+
+                            <a href="{{ url_for('team') }}">
+                                Team
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Admin -->
+                <div class="col-md-6 col-lg-3 info_col">
+
+                    <div class="info_detail">
+
+                        <h4>
+                            Administration
+                        </h4>
+
+                        <p>
+                            Access the ShieldWAF administration
+                            login page.
+                        </p>
+
+                        <a href="{{ url_for('login') }}">
+                            Admin Login
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- End Information Section -->
+
+
+    <!-- Footer -->
+
+    <section class="footer_section">
+
+        <div class="container">
+
+            <p>
+                &copy; <span id="displayYear"></span>
+                ShieldWAF. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- End Footer -->
+
+
+    <!-- JavaScript -->
+
+    <script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</body>
+
+</html>
